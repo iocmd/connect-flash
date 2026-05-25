@@ -1,13 +1,7 @@
-'use strict';
+import {run} from 'madrun';
 
-const {
-    run,
-    series,
-    parallel,
-} = require('madrun');
-
-module.exports = {
-    'test': () => 'NODE_PATH=lib node_modules/.bin/vows test/*-test.js',
+export default {
+    'test': () => 'NODE_PATH=lib node_modules/.bin/vows test/*-test.*js',
     'watch:test': async () => `nodemon -w lib -w test -x "${await run('test')}"`,
     'lint': () => `putout .`,
     'fresh:lint': () => run('lint', '--fresh'),

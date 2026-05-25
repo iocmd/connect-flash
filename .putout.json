@@ -1,0 +1,11 @@
+{
+    "rules": {
+        "apply-global-this": "off"
+    },
+    "match": {
+        "test": {
+            "nodejs/convert-commonjs-to-esm": "off",
+            "variables/remove-unused": "off"
+        }
+    }
+}

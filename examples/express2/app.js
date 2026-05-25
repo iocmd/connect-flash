@@ -1,8 +1,8 @@
 'use strict';
 
-var express = require('express');
-var flash = require('../..');
-var app = express.createServer();
+const express = require('express');
+const flash = require('../..');
+const app = express.createServer();
 
 // configure Express
 app.configure(() => {
@@ -13,7 +13,8 @@ app.configure(() => {
     app.use(express.session({
         secret: 'keyboard cat',
     }));
-        // Setting `unsafe` to `true` causes connect-flash's implementation to
+    
+    // Setting `unsafe` to `true` causes connect-flash's implementation to
     // override Express 2.x's implementation.  Functionally these are equivalent,
     // so there is no reason to use connect-flash with Express 2.x.  This example
     // is for illustrative purposes only.
@@ -23,23 +24,23 @@ app.configure(() => {
     app.use(app.router);
 });
 
-app.get('/', function(req, res) {
+app.get('/', (req, res) => {
     res.render('index', {
         message: req.flash('info'),
     });
 });
 
-app.get('/flash', function(req, res) {
+app.get('/flash', (req, res) => {
     req.flash('info', 'Hi there!');
     res.redirect('/');
 });
 
-app.get('/multiple-flash', function(req, res) {
+app.get('/multiple-flash', (req, res) => {
     req.flash('info', ['Welcome', 'Please Enjoy']);
     res.redirect('/');
 });
 
-app.get('/no-flash', function(req, res) {
+app.get('/no-flash', (req, res) => {
     res.redirect('/');
 });
 
