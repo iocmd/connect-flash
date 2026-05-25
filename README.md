@@ -22,7 +22,9 @@ framework or application. +1 for [radical reusability](http://substack.net/posts
 
 ## Install
 
-    $ npm install connect-flash
+```
+npm i @iocmd/connect-flash
+```
 
 ## Usage
 

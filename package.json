@@ -1,6 +1,7 @@
 {
   "name": "@iocmd/connect-flash",
   "version": "1.0.0",
+  "type": "commonjs",
   "description": "Flash message middleware for Connect.",
   "keywords": [
     "connect",
@@ -10,7 +11,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/jaredhanson/connect-flash.git"
+    "url": "git+https://github.com/jaredhanson/connect-flash.git"
   },
   "bugs": {
     "url": "http://github.com/jaredhanson/connect-flash/issues"
@@ -20,12 +21,10 @@
     "email": "jaredhanson@gmail.com",
     "url": "http://www.jaredhanson.net/"
   },
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "http://www.opensource.org/licenses/MIT"
-    }
-  ],
+  "licenses": [{
+    "type": "MIT",
+    "url": "http://www.opensource.org/licenses/MIT"
+  }],
   "main": "./lib",
   "dependencies": {},
   "devDependencies": {
