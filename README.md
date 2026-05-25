@@ -3,9 +3,10 @@
 [NPMURL]: https://npmjs.org/package/@iocmd/connect-flash "npm"
 [NPMIMGURL]: https://img.shields.io/npm/v/@iocmd/connect-flash.svg?style=flat
 [BuildStatusURL]: https://github.com/coderaiser/@iocmd/connect-flash/actions?query=workflow%3A%22Node+CI%22 "Build Status"
-[BuildStatusIMGURL]: https://github.com/coderaiser/@iocmd/connect-flash/workflows/Node%20CI/badge.svg
+[BuildStatusIMGURL]: https://github.com/iocmd/connect-flash/actions/workflows/nodejs.yml/badge.svg
 [LicenseURL]: https://tldrlegal.com/license/mit-license "MIT License"
 [LicenseIMGURL]: https://img.shields.io/badge/license-MIT-317BF9.svg?style=flat
+
 
 Fork of [connect-flash](https://github.com/jaredhanson/connect-flash). Contains:
 
