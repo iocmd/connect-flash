@@ -1,6 +1,6 @@
 {
   "name": "@iocmd/connect-flash",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "description": "Flash message middleware for Connect.",
   "keywords": [
@@ -21,10 +21,12 @@
     "email": "jaredhanson@gmail.com",
     "url": "http://www.jaredhanson.net/"
   },
-  "licenses": [{
-    "type": "MIT",
-    "url": "http://www.opensource.org/licenses/MIT"
-  }],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www.opensource.org/licenses/MIT"
+    }
+  ],
   "exports": "./lib/flash.js",
   "dependencies": {},
   "devDependencies": {
