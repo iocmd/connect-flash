@@ -4,11 +4,8 @@
 
 .*
 
-README.md
-# Node.js
+PULL_REQUEST_TEMPLATE.md
 
-Makefile
-doc/
 examples/
 test/
 node_modules/
