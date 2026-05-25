@@ -1,0 +1,50 @@
+{
+  "name": "@iocmd/connect-flash",
+  "version": "1.0.0",
+  "description": "Flash message middleware for Connect.",
+  "keywords": [
+    "connect",
+    "express",
+    "flash",
+    "messages"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jaredhanson/connect-flash.git"
+  },
+  "bugs": {
+    "url": "http://github.com/jaredhanson/connect-flash/issues"
+  },
+  "author": {
+    "name": "Jared Hanson",
+    "email": "jaredhanson@gmail.com",
+    "url": "http://www.jaredhanson.net/"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www.opensource.org/licenses/MIT"
+    }
+  ],
+  "main": "./lib",
+  "dependencies": {},
+  "devDependencies": {
+    "madrun": "^13.0.2",
+    "putout": "^42.5.0",
+    "superc8": "^12.7.0",
+    "vows": "^0.8.3"
+  },
+  "scripts": {
+    "test": "madrun test",
+    "watch:test": "madrun watch:test",
+    "lint": "madrun lint",
+    "fresh:lint": "madrun fresh:lint",
+    "lint:fresh": "madrun lint:fresh",
+    "fix:lint": "madrun fix:lint",
+    "coverage": "madrun coverage",
+    "report": "madrun report"
+  },
+  "engines": {
+    "node": ">= 22"
+  }
+}
