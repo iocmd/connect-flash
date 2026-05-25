@@ -6,7 +6,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      NAME: @iocmd/connect-flash
+      NAME: '@iocmd/connect-flash'
     strategy:
       matrix:
         node-version:
