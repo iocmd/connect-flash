@@ -82,8 +82,6 @@ $ npm install --dev
 $ make test
 ```
 
-[![Build Status](https://secure.travis-ci.org/jaredhanson/connect-flash.png)](http://travis-ci.org/jaredhanson/connect-flash)
-
 ## Credits
 
 - [Jared Hanson](http://github.com/jaredhanson)
