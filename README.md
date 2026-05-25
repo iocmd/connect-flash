@@ -1,5 +1,12 @@
 # connect-flash
 
+For of [connect-flash](https://github.com/jaredhanson/connect-flash). Contains:
+
+- ✅ Fixed [`isArray`](https://github.com/jaredhanson/connect-flash/issues/75) bug;
+- ✅ Fixed tests;
+- ✅ Updated dependencies;
+- ✅ Migrated to ESM;
+
 The flash is a special area of the session used for storing messages.  Messages
 are written to the flash and cleared after being displayed to the user.  The
 flash is typically used in combination with redirects, ensuring that the message
@@ -10,16 +17,6 @@ Express 3.x removed direct support for the flash.  connect-flash brings this
 functionality back to Express 3.x, as well as any other middleware-compatible
 framework or application. +1 for [radical reusability](http://substack.net/posts/b96642/the-node-js-aesthetic).
 
-***
-
-<p align="center">
-  <sup>Advertisement</sup>
-  <br>
-  <a href="https://click.linksynergy.com/link?id=D*o7yui4/NM&offerid=507388.1565838&type=2&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fthe-complete-web-development-bootcamp%2F&u1=kLuTGbJ5MIj5DsRzxguZr3CjzGb0gRdZ3C4KXxP">The Complete 2020 Web Development Bootcamp</a><br>Become a full-stack web developer with just one course. HTML, CSS, Javascript, Node, React, MongoDB and more!
-</p>
-
-***
-
 ## Install
 
 ```
@@ -28,14 +25,12 @@ npm i @iocmd/connect-flash
 
 ## Usage
 
-#### Express 3.x
-
 Flash messages are stored in the session.  First, setup sessions as usual by
 enabling `cookieParser` and `session` middleware.  Then, use `flash` middleware
 provided by connect-flash.
 
 ```javascript
-const flash = require('connect-flash');
+import {flash} from 'connect-flash';
 const app = express();
 
 app.configure(() => {

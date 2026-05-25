@@ -1,7 +1,7 @@
 'use strict';
 
 const express = require('express');
-const flash = require('../..');
+const {flash} = require('../..');
 const app = express();
 
 // configure Express
