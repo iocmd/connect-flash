@@ -11,10 +11,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jaredhanson/connect-flash.git"
+    "url": "git+https://github.com/iocmd/connect-flash.git"
   },
   "bugs": {
-    "url": "http://github.com/jaredhanson/connect-flash/issues"
+    "url": "http://github.com/iocmd/connect-flash/issues"
   },
   "author": {
     "name": "Jared Hanson",
@@ -25,7 +25,7 @@
     "type": "MIT",
     "url": "http://www.opensource.org/licenses/MIT"
   }],
-  "main": "./lib",
+  "exports": "./lib/flash.js",
   "dependencies": {},
   "devDependencies": {
     "@putout/eslint-flat": "^4.0.1",

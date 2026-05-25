@@ -1,7 +1,7 @@
 import {run} from 'madrun';
 
 export default {
-    'test': () => 'NODE_PATH=lib node_modules/.bin/vows test/*-test.*js',
+    'test': () => 'NODE_PATH=lib vows test/*-test.*js',
     'watch:test': async () => `nodemon -w lib -w test -x "${await run('test')}"`,
     'lint': () => `putout .`,
     'fresh:lint': () => run('lint', '--fresh'),
